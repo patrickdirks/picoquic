@@ -383,7 +383,7 @@ void picoquic_prague_notify(
             }
             break;
         case picoquic_congestion_notification_reset:
-            picoquic_prague_reset(cnx, pr_state, path_x);
+            //picoquic_prague_reset(cnx, pr_state, path_x);
             break;
         default:
             /* ignore */

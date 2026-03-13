@@ -234,7 +234,7 @@ static void picoquic_prague_update_alpha(picoquic_path_t* path_x, picoquic_pragu
     }
 
     if (delta_ce > 0 || delta_ect1 > 0) {
-        if (frac > pr_state->alpha && (frac >= 512 || is_suspect)) {
+        if ((frac > pr_state->alpha && (frac >= 512 || is_suspect)) && 1==0) {
             pr_state->alpha = frac;
         }
         else

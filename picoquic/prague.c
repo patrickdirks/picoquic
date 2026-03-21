@@ -95,7 +95,7 @@ typedef enum {
 } picoquic_prague_alg_state_t;
 
 #define NB_RTT_RENO 4
-#define PRAGUE_SHIFT_G 5 /* g = 1/2^4, gain parameter for alpha EWMA */
+#define PRAGUE_SHIFT_G 6 /* g = 1/2^4, gain parameter for alpha EWMA */
 #define PRAGUE_G_INV (1<<PRAGUE_SHIFT_G)
 
 typedef struct st_picoquic_prague_state_t {
